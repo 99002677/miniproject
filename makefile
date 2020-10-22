@@ -1,4 +1,4 @@
-target: freelancer server1 client server2 out clean
+target: freelancer server1 client server2 freelancer_run client_run clean
 
 freelancer:
 	gcc -c -Iinclude src/freelancer.c
