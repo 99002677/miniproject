@@ -1,13 +1,13 @@
-target: server1 server2 freelancer client out clean
+target: freelancer server1 client server2 out clean
 
-server1:
-	gcc -Iinclude freelancer.o -o freelancer.out
-server2:
-	gcc -Iinclude client.o -o client.out
 freelancer:
 	gcc -c -Iinclude src/freelancer.c
+server1:
+	gcc -Iinclude freelancer.o -o freelancer.out
 client:
-	gcc -c -Iinclude src/client.c
+	gcc -c -Iinclude src/client.c	
+server2:
+	gcc -Iinclude client.o -o client.out
 clean:
 	rm -rf *.o *.out
 freelancer_run:
