@@ -18,5 +18,5 @@ jobs:
       run:  sudo apt-get install -y libmath-libm-perl 
       
     - name: make all
-      run:  freelancer.out
+      run:  freelancer.out client.out
     
