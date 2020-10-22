@@ -19,4 +19,4 @@ jobs:
       
     - name: make all
       run:  freelancer.out
-      run:  client.out
+    
